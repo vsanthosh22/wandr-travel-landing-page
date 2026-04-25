@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wandr – Discover. Plan. Explore.</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/fontawesome.min.css" />
+
+  <!-- Google Fonts: Playfair Display + DM Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Custom CSS Files -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+
+    <!-- ================================
+         NAVBAR
+    ================================= -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <span class="brand-dot"></span>
+                wandr
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navMenu"
+                    aria-controls="navMenu" aria-expanded="false">
+                <i class="fa-solid fa-bars" style="color:#C9A84C;"></i>
+            </button>
+
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav mx-auto gap-2">
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#screenshots">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#how-it-works">How It Works</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+                    <a href="#" class="btn btn-nav-ghost">Log In</a>
+                    <a href="#download" class="btn btn-nav-gold">Download App</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- ================================
+         HERO SECTION
+    ================================= -->
+    <section class="hero-section" id="home">
+        <div class="hero-bg-pattern"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+
+                <!-- Hero Text -->
+                <div class="col-lg-6 hero-content animate-fade-up">
+                    <div class="hero-eyebrow">
+                        <span class="eyebrow-dot"></span>
+                        Travel Smarter
+                    </div>
+                    <h1 class="hero-heading">
+                        The world<br />
+                        is your<br />
+                        <em class="heading-italic">canvas.</em>
+                    </h1>
+                    <p class="hero-subtext">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam quis nostrud exercitation.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="hero-cta d-flex flex-wrap gap-3">
+                        <a href="#" class="btn btn-store">
+                            <i class="fa-brands fa-apple"></i>
+                            <div class="store-text">
+                                <span>Download on the</span>
+                                App Store
+                            </div>
+                        </a>
+                        <a href="#" class="btn btn-store btn-store-outline">
+                            <i class="fa-brands fa-google-play"></i>
+                            <div class="store-text">
+                                <span>Get it on</span>
+                                Google Play
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Stats Row -->
+                    <div class="hero-stats d-flex flex-wrap gap-4 mt-5">
+                        <div class="stat-item">
+                            <div class="stat-number">2M+</div>
+                            <div class="stat-label">Active Travellers</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <div class="stat-number">190+</div>
+                            <div class="stat-label">Countries Covered</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <div class="stat-number">4.9</div>
+                            <div class="stat-label">App Store Rating</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Phone Mockup -->
+                <div class="col-lg-6 hero-phone-col animate-fade-left">
+                    <div class="phone-mockup-wrapper">
+                        <!-- Glow Effect -->
+                        <div class="phone-glow"></div>
+
+                        <!-- Main Phone -->
+                        <div class="phone-frame main-phone">
+                            <div class="phone-screen">
+                                <!--
+                                  SUGGESTED IMAGE:
+                                  A travel app home screen showing a map or destination card UI.
+                                  Recommended: placehold.co or a Photoshop mockup of a maps screen.
+                                  Size: 300x580px
+                                -->
+                                <img src="https://placehold.co/300x580/1A1A2E/C9A84C?text=App+Home+Screen"
+                                     alt="Wandr App Home Screen"
+                                     class="phone-screen-img" />
+                            </div>
+                        </div>
+
+                        <!-- Second Phone (offset) -->
+                        <div class="phone-frame second-phone">
+                            <div class="phone-screen">
+                                <!--
+                                  SUGGESTED IMAGE:
+                                  A travel destination detail screen with a photo and info cards.
+                                  Size: 260x500px
+                                -->
+                                <img src="https://placehold.co/260x500/16213E/C9A84C?text=Destination+Detail"
+                                     alt="Wandr Destination Screen"
+                                     class="phone-screen-img" />
+                            </div>
+                        </div>
+
+                        <!-- Floating Cards -->
+                        <div class="float-card card-location animate-float">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <strong>Santorini, Greece</strong>
+                                <span>Added to wishlist</span>
+                            </div>
+                        </div>
+
+                        <div class="float-card card-rating animate-float-delay">
+                            <div class="mini-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span>98% loved this trip</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+
+    <!-- ================================
+         FEATURES SECTION
+    ================================= -->
+    <section class="features-section" id="features">
+        <div class="container">
+
+            <!-- Section Header -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-7 text-center">
+                    <span class="section-tag">Why Wandr</span>
+                    <h2 class="section-heading">
+                        Travel the way<br />
+                        <em>you've always imagined</em>
+                    </h2>
+                </div>
+            </div>
+
+            <!-- Feature Rows -->
+            <div class="row align-items-center g-5 mb-5 pb-5 feature-row">
+                <div class="col-lg-5">
+                    <div class="feature-tag">Smart Discovery</div>
+                    <h3 class="feature-heading">Find hidden gems no one else knows about</h3>
+                    <p class="feature-body">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua enim
+                        ad minim veniam quis nostrud exercitation ullamco laboris.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check"></i> AI-powered destination recommendations</li>
+                        <li><i class="fa-solid fa-check"></i> Curated local experiences</li>
+                        <li><i class="fa-solid fa-check"></i> Off-the-beaten-path routes</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <div class="feature-image-wrap">
+                        <!--
+                          SUGGESTED IMAGE:
+                          A map view or destination discovery screen from a travel app.
+                          Show pins on a dark map with gold highlights.
+                          Size: 540x380px
+                        -->
+                        <img src="https://placehold.co/540x380/16213E/C9A84C?text=Discovery+Screen"
+                             alt="Smart Discovery Feature"
+                             class="feature-img img-fluid" />
+                        <div class="feature-img-badge">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            AI-Powered
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center g-5 feature-row">
+                <div class="col-lg-6 order-lg-1 order-2">
+                    <div class="feature-image-wrap">
+                        <!--
+                          SUGGESTED IMAGE:
+                          A trip itinerary planner screen showing a timeline/schedule UI.
+                          Size: 540x380px
+                        -->
+                        <img src="https://placehold.co/540x380/0D0D1A/C9A84C?text=Itinerary+Planner"
+                             alt="Trip Planning Feature"
+                             class="feature-img img-fluid" />
+                        <div class="feature-img-badge badge-right">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            Smart Planning
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1 order-lg-2 order-1">
+                    <div class="feature-tag">Trip Planner</div>
+                    <h3 class="feature-heading">Plan your entire trip in minutes, not hours</h3>
+                    <p class="feature-body">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur excepteur sint occaecat
+                        cupidatat non proident sunt in culpa officia deserunt.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check"></i> Drag-and-drop itinerary builder</li>
+                        <li><i class="fa-solid fa-check"></i> Real-time budget tracking</li>
+                        <li><i class="fa-solid fa-check"></i> Collaborative trip planning</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================================
+         SCREENSHOTS SECTION
+    ================================= -->
+    <section class="screenshots-section" id="screenshots">
+        <div class="container-fluid px-0">
+
+            <div class="container mb-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <span class="section-tag">App Gallery</span>
+                        <h2 class="section-heading">
+                            Every screen,<br />
+                            <em>crafted with care</em>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Screenshots Scroll Strip -->
+            <div class="screenshots-strip">
+                <div class="screenshots-track">
+
+                    <!--
+                      SUGGESTED IMAGES:
+                      Screenshots of different app screens — Onboarding, Home, Search,
+                      Destination Detail, Itinerary, Profile, Map View, Reviews.
+                      Use your own UI designs or placehold.co with different tints.
+                      Ideal size per screenshot: 280x560px (portrait phone ratio)
+                    -->
+
+                    <div class="screenshot-item">
+                        <img src="https://placehold.co/280x560/1A1A2E/C9A84C?text=Onboarding" alt="Onboarding Screen" />
+                        <span>Onboarding</span>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="https://placehold.co/280x560/16213E/E8C97A?text=Home+Feed" alt="Home Screen" />
+                        <span>Home Feed</span>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="https://placehold.co/280x560/0D0D1A/C9A84C?text=Explore+Map" alt="Explore Screen" />
+                        <span>Explore Map</span>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="https://placehold.co/280x560/1A1A2E/E8C97A?text=Destination" alt="Destination Screen" />
+                        <span>Destination</span>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="https://placehold.co/280x560/16213E/C9A84C?text=Itinerary" alt="Itinerary Screen" />
+                        <span>Itinerary</span>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="https://placehold.co/280x560/0D0D1A/E8C97A?text=Booking" alt="Booking Screen" />
+                        <span>Booking</span>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="https://placehold.co/280x560/1A1A2E/C9A84C?text=Profile" alt="Profile Screen" />
+                        <span>Profile</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================================
+         STATS SECTION
+    ================================= -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+
+                <div class="stat-block">
+                    <div class="stat-big">2M+</div>
+                    <div class="stat-desc">Active travellers using Wandr every month</div>
+                </div>
+
+                <div class="stat-divider-v"></div>
+
+                <div class="stat-block">
+                    <div class="stat-big">190+</div>
+                    <div class="stat-desc">Countries and territories fully mapped</div>
+                </div>
+
+                <div class="stat-divider-v"></div>
+
+                <div class="stat-block">
+                    <div class="stat-big">50K+</div>
+                    <div class="stat-desc">Hidden gems and curated local experiences</div>
+                </div>
+
+                <div class="stat-divider-v"></div>
+
+                <div class="stat-block">
+                    <div class="stat-big">4.9★</div>
+                    <div class="stat-desc">Average rating across App Store and Google Play</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================================
+         HOW IT WORKS SECTION
+    ================================= -->
+    <section class="how-section" id="how-it-works">
+        <div class="container">
+
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6 text-center">
+                    <span class="section-tag">How It Works</span>
+                    <h2 class="section-heading">
+                        Three steps to your<br />
+                        <em>perfect adventure</em>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-4">
+                    <div class="how-card">
+                        <div class="how-number">01</div>
+                        <div class="how-icon">
+                            <i class="fa-solid fa-user-plus"></i>
+                        </div>
+                        <h5 class="how-title">Create Your Profile</h5>
+                        <p class="how-text">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <!--
+                          SUGGESTED IMAGE:
+                          Small screenshot of signup/profile setup screen.
+                          Size: 220x160px
+                        -->
+                        <img src="https://placehold.co/260x160/16213E/C9A84C?text=Profile+Setup"
+                             alt="Profile Setup"
+                             class="how-card-img img-fluid" />
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="how-card how-card-highlight">
+                        <div class="how-number">02</div>
+                        <div class="how-icon how-icon-gold">
+                            <i class="fa-solid fa-compass"></i>
+                        </div>
+                        <h5 class="how-title">Discover Destinations</h5>
+                        <p class="how-text">
+                            Ut enim ad minim veniam quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat duis aute.
+                        </p>
+                        <img src="https://placehold.co/260x160/0D0D1A/E8C97A?text=Explore+Screen"
+                             alt="Discover Destinations"
+                             class="how-card-img img-fluid" />
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="how-card">
+                        <div class="how-number">03</div>
+                        <div class="how-icon">
+                            <i class="fa-solid fa-plane-departure"></i>
+                        </div>
+                        <h5 class="how-title">Book & Explore</h5>
+                        <p class="how-text">
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur excepteur sint occaecat.
+                        </p>
+                        <img src="https://placehold.co/260x160/1A1A2E/C9A84C?text=Booking+Screen"
+                             alt="Book and Explore"
+                             class="how-card-img img-fluid" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================================
+         TESTIMONIALS SECTION
+    ================================= -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6 text-center">
+                    <span class="section-tag">Traveller Reviews</span>
+                    <h2 class="section-heading">
+                        Stories from<br />
+                        <em>real wanderers</em>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-4">
+                    <div class="review-card review-card-featured">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua enim
+                            ad minim veniam quis nostrud exercitation ullamco."
+                        </p>
+                        <div class="review-author">
+                            <!--
+                              SUGGESTED IMAGE:
+                              Realistic avatar. Use thispersondoesnotexist.com screenshot
+                              or placehold.co with initials. Size: 48x48px, circular.
+                            -->
+                            <img src="https://placehold.co/48x48/C9A84C/1A1A2E?text=MR" alt="Maya R." class="review-avatar" />
+                            <div>
+                                <div class="review-name">Maya Rodriguez</div>
+                                <div class="review-meta">Solo Traveller · 43 trips planned</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            "Ut enim ad minim veniam quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat duis aute irure
+                            dolor in reprehenderit in voluptate velit esse cillum."
+                        </p>
+                        <div class="review-author">
+                            <img src="https://placehold.co/48x48/E8C97A/1A1A2E?text=JT" alt="James T." class="review-avatar" />
+                            <div>
+                                <div class="review-name">James Thornton</div>
+                                <div class="review-meta">Adventure Traveller · 29 trips planned</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            "Excepteur sint occaecat cupidatat non proident sunt in culpa
+                            qui officia deserunt mollit anim id est laborum sed perspiciatis
+                            unde omnis iste natus error sit voluptatem accusantium."
+                        </p>
+                        <div class="review-author">
+                            <img src="https://placehold.co/48x48/C9A84C/1A1A2E?text=SL" alt="Sophie L." class="review-avatar" />
+                            <div>
+                                <div class="review-name">Sophie Laurent</div>
+                                <div class="review-meta">Family Traveller · 17 trips planned</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================================
+         DOWNLOAD SECTION
+    ================================= -->
+    <section class="download-section" id="download">
+        <div class="container">
+            <div class="download-inner">
+
+                <!-- Left Content -->
+                <div class="download-content">
+                    <span class="section-tag">Get The App</span>
+                    <h2 class="download-heading">
+                        Your next adventure<br />
+                        starts <em>right here.</em>
+                    </h2>
+                    <p class="download-subtext">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mt-4">
+                        <a href="#" class="btn btn-store btn-store-dark">
+                            <i class="fa-brands fa-apple"></i>
+                            <div class="store-text">
+                                <span>Download on the</span>
+                                App Store
+                            </div>
+                        </a>
+                        <a href="#" class="btn btn-store btn-store-dark">
+                            <i class="fa-brands fa-google-play"></i>
+                            <div class="store-text">
+                                <span>Get it on</span>
+                                Google Play
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- App Store Ratings -->
+                    <div class="store-ratings d-flex gap-4 mt-4">
+                        <div class="store-rating-item">
+                            <div class="store-stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span>4.9 on App Store</span>
+                        </div>
+                        <div class="store-rating-item">
+                            <div class="store-stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span>4.8 on Google Play</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Phone -->
+                <div class="download-phone">
+                    <div class="download-phone-glow"></div>
+                    <div class="phone-frame download-frame">
+                        <div class="phone-screen">
+                            <!--
+                              SUGGESTED IMAGE:
+                              A beautiful destination photo as the app splash/home screen.
+                              Ideally a scenic travel photo — beach, mountains, or cityscape.
+                              Size: 280x540px
+                            -->
+                            <img src="https://placehold.co/280x540/1A1A2E/C9A84C?text=Download+Screen"
+                                 alt="Wandr Download Screen"
+                                 class="phone-screen-img" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="row g-5 footer-top">
+
+                <!-- Brand -->
+                <div class="col-lg-4 col-md-6">
+                    <a class="footer-brand" href="#">
+                        <span class="brand-dot brand-dot-sm"></span>
+                        wandr
+                    </a>
+                    <p class="footer-tagline">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+                        eiusmod tempor incididunt ut labore et dolore.
+                    </p>
+                    <div class="footer-social d-flex gap-3 mt-3">
+                        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6 class="footer-col-heading">Product</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Download</a></li>
+                        <li><a href="#">Changelog</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6 class="footer-col-heading">Explore</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Destinations</a></li>
+                        <li><a href="#">Experiences</a></li>
+                        <li><a href="#">Travel Guides</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6 class="footer-col-heading">Company</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6 class="footer-col-heading">Legal</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+                <p class="footer-copy">© 2025 Wandr Technologies. All rights reserved.</p>
+                <div class="footer-bottom-links d-flex gap-4">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Fontawesome JS -->
+    <script src="js/fontawesome.min.js"></script>
+
+    <!-- Navbar Scroll Script -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

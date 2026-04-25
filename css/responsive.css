@@ -1,0 +1,373 @@
+/* ================================
+   WANDR – RESPONSIVE STYLES
+   css/responsive.css
+================================= */
+
+
+/* ================================
+   LARGE DESKTOP (1400px+)
+================================= */
+@media (min-width: 1400px) {
+
+  .hero-heading {
+    font-size: 84px;
+  }
+
+  .section-heading {
+    font-size: 52px;
+  }
+
+  .download-heading {
+    font-size: 54px;
+  }
+
+}
+
+
+/* ================================
+   TABLET LANDSCAPE (992px – 1199px)
+================================= */
+@media (max-width: 1199px) {
+
+  .hero-heading {
+    font-size: 58px;
+  }
+
+  .phone-mockup-wrapper {
+    width: 300px;
+  }
+
+  .main-phone {
+    width: 260px;
+  }
+
+  .second-phone {
+    width: 200px;
+    right: -50px;
+  }
+
+  .card-location {
+    left: -30px;
+  }
+
+  .download-inner {
+    padding: 50px 40px;
+    gap: 40px;
+  }
+
+  .download-heading {
+    font-size: 38px;
+  }
+
+  .stat-big {
+    font-size: 42px;
+  }
+
+}
+
+
+/* ================================
+   TABLET PORTRAIT (768px – 991px)
+================================= */
+@media (max-width: 991px) {
+
+  section { padding: 70px 0; }
+
+  /* Navbar */
+  #mainNav {
+    background: rgba(13, 13, 26, 0.97);
+    backdrop-filter: blur(20px);
+  }
+
+  .navbar-collapse {
+    padding: 20px 0;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    margin-top: 10px;
+  }
+
+  /* Hero */
+  .hero-section {
+    text-align: center;
+    padding: 100px 0 60px;
+  }
+
+  .hero-content {
+    padding-right: 0;
+  }
+
+  .hero-heading {
+    font-size: 52px;
+  }
+
+  .hero-subtext {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta {
+    justify-content: center;
+  }
+
+  .hero-stats {
+    justify-content: center;
+  }
+
+  .hero-phone-col {
+    margin-top: 50px;
+    padding: 20px 0 40px;
+  }
+
+  .phone-mockup-wrapper {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .main-phone {
+    width: 240px;
+  }
+
+  .second-phone {
+    display: none;
+  }
+
+  .card-location {
+    left: -10px;
+    top: 20px;
+  }
+
+  .card-rating {
+    right: -10px;
+  }
+
+  .scroll-indicator {
+    display: none;
+  }
+
+  /* Section Headings */
+  .section-heading {
+    font-size: 36px;
+  }
+
+  /* Features */
+  .feature-heading {
+    font-size: 28px;
+  }
+
+  .feature-img-badge {
+    bottom: -12px;
+  }
+
+  /* Stats */
+  .stats-grid {
+    gap: 10px;
+  }
+
+  .stat-divider-v {
+    display: none;
+  }
+
+  .stat-block {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 12px;
+  }
+
+  .stat-big {
+    font-size: 40px;
+  }
+
+  /* How Section */
+  .how-card-highlight {
+    transform: none;
+  }
+
+  /* Download */
+  .download-inner {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 30px;
+  }
+
+  .download-content {
+    max-width: 100%;
+  }
+
+  .download-heading {
+    font-size: 36px;
+  }
+
+  .download-phone {
+    order: -1;
+  }
+
+  .download-frame {
+    width: 240px;
+    margin: 0 auto;
+  }
+
+  .store-ratings {
+    justify-content: center;
+  }
+
+  .d-flex.gap-3.mt-4 {
+    justify-content: center;
+  }
+
+}
+
+
+/* ================================
+   MOBILE LANDSCAPE (576px – 767px)
+================================= */
+@media (max-width: 767px) {
+
+  section { padding: 60px 0; }
+
+  .hero-heading {
+    font-size: 42px;
+    letter-spacing: -1px;
+  }
+
+  .section-heading {
+    font-size: 30px;
+    letter-spacing: -0.5px;
+  }
+
+  .feature-heading {
+    font-size: 24px;
+  }
+
+  .stat-big {
+    font-size: 36px;
+  }
+
+  .stat-block {
+    width: 100%;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .stat-divider {
+    display: none;
+  }
+
+  .stat-item {
+    align-items: center;
+    text-align: center;
+  }
+
+  .download-heading {
+    font-size: 30px;
+  }
+
+  .download-inner {
+    padding: 40px 20px;
+    border-radius: 20px;
+  }
+
+  .footer-brand {
+    font-size: 20px;
+  }
+
+}
+
+
+/* ================================
+   MOBILE PORTRAIT (< 576px)
+================================= */
+@media (max-width: 575px) {
+
+  section { padding: 50px 0; }
+
+  .hero-section {
+    padding: 90px 0 50px;
+  }
+
+  .hero-heading {
+    font-size: 36px;
+    letter-spacing: -0.5px;
+  }
+
+  .hero-subtext {
+    font-size: 15px;
+  }
+
+  .btn-store {
+    padding: 10px 16px;
+    gap: 10px;
+  }
+
+  .btn-store i {
+    font-size: 20px;
+  }
+
+  .section-heading {
+    font-size: 26px;
+  }
+
+  .phone-mockup-wrapper {
+    width: 240px;
+  }
+
+  .main-phone {
+    width: 220px;
+  }
+
+  .float-card {
+    font-size: 11px;
+    padding: 8px 12px;
+  }
+
+  .card-location {
+    left: 0;
+    top: 10px;
+  }
+
+  .card-rating {
+    right: 0;
+  }
+
+  .how-card {
+    padding: 28px 20px;
+  }
+
+  .how-number {
+    font-size: 48px;
+  }
+
+  .review-card {
+    padding: 24px 20px;
+  }
+
+  .screenshots-strip {
+    padding: 10px 20px 30px;
+  }
+
+  .screenshot-item img {
+    width: 160px;
+  }
+
+  .download-inner {
+    padding: 36px 16px;
+    gap: 30px;
+  }
+
+  .download-heading {
+    font-size: 26px;
+  }
+
+  .download-frame {
+    width: 200px;
+  }
+
+  .footer-tagline {
+    max-width: 100%;
+  }
+
+}
